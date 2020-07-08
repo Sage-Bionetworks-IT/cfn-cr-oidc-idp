@@ -18,7 +18,7 @@ Launch the CloudFormation stack using the [sceptre](https://github.com/Sceptre/s
 The sceptre template should be something like this..
 
 ```yaml
-template_path: remote/cfn-oidc-identity-provider.yaml
+template_path: remote/cfn-cr-oidc-idp.yaml
 stack_name: my-oidc-idp
 stack_tags:
   Department: "Platform"
@@ -30,7 +30,7 @@ parameters:
   ThumbprintList: "09aa48a9a6fb14926bb7f3fa2e02da2b0ab02fa"
 hooks:
   before_launch:
-    - !cmd "curl https://s3.amazonaws.com/bootstrap-awss3cloudformationbucket-19qromfd235z9/aws-infra/master/cfn-oidc-identity-provider.yaml --create-dirs -o templates/remote/cfn-oidc-identity-provider.yaml"
+    - !cmd "curl https://s3.amazonaws.com/bootstrap-awss3cloudformationbucket-19qromfd235z9/aws-infra/master/cfn-cr-oidc-idp.yaml --create-dirs -o templates/remote/cfn-cr-oidc-idp.yaml"
 ```
 
 This will launch the stack with example URL, Client IDs and Thumbprints.

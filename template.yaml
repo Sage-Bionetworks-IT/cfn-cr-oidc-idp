@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Transform: AWS::Serverless-2016-10-31
-Description: CFN customer resource to setup an OIDC identity provider
+Description: CFN custom resource to setup an AWS OIDC identity provider
 Metadata:
   Source: https://github.com/mozilla/security/tree/master/operations/cloudformation-templates/oidc_identity_provider/
 Parameters:
