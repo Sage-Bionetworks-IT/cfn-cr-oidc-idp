@@ -1,4 +1,7 @@
-# OIDC Identity Provider CloudFormation Template Custom Resource
+# This custom resource is deprecated.  Please use the [AWS officially supported OIDC resource provider](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-iam-oidcprovider.html)
+
+
+# Overview
 
 This template and associated Lambda function and custom resource add support to \
 AWS CloudFormation for the [AWS IAM OpenId Connect Identity Provider][1]
